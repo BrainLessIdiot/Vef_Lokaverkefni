@@ -181,5 +181,5 @@ def send_image(filename):
 def send_image(filename):
     return static_file(filename, root='images', mimetype='images/png')
 
-run()
+run(host='0.0.0.0', port=os.environ.get('PORT'))
 
