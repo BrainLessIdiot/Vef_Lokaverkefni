@@ -1,6 +1,7 @@
 from  bottle import run,route,redirect,request,post,template,app,response,static_file
 from sys import argv
 import pymysql
+import os
 from beaker.middleware import SessionMiddleware
 session_opts = {
     'session.type': 'file',
